@@ -16,7 +16,7 @@
 
 .container {
     display: grid;
-    grid: 64px 650px 820px 800px 800px 80px / 60% 40%;
+    grid: 64px 650px 820px 1289px 800px 80px / 60% 40%;
     grid-gap: 1px;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .logo {
@@ -206,6 +206,7 @@ nav a:hover {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     border-left: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: grid;
     grid: 250px 250px 250px 65px / 1fr;
     grid-row-gap: 2px;
@@ -281,20 +282,230 @@ nav a:hover {
 .sec-four {
     grid-row: 4 / 5;
     grid-column: 1 / 3;
-    background-color: black;
-    color: white;
+    backgcround-color: rgb(216, 216, 216);
+    width: 100%;
+    position: absolute;
+    top: 1536px
 }
 
+.start-learning {
+    position: absolute;
+    width: 100%;
+    margin: 64px auto;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-learning h1{
+    color: rgb(59, 59, 59);
+    font-size: 3rem;
+    font-weight: 700;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.course-options {
+    position: absolute;
+    transform: translate(72px, 192px);
+    width: 1375px;
+    height: 1032px;
+    border: 2px solid dblack;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.subject {
+    border: 2px solid bldack;
+    color: black;
+    height: 500px;
+    width: 432px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    box-shadow: 13px 18px 48px -11px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.picture {
+    height: 222px;
+    width: 100%;
+}
+
+.picture img{
+    height: auto;
+    width: 432px;
+}
+
+.description {
+    width: 100%;
+    height: 262px;
+}
+
+.details {
+    margin: 30px auto;
+    width: 90%;
+    height: 200px;
+    color: rgb(88, 88, 88);
+    text-align: center;
+}
+
+.details h2 {
+    color: rgb(51, 51, 51);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.details hr {
+    transform: translateY(-23px);
+    height: 3px;
+    background: black;
+    box-shadow: 13px 18px 48px -11px rgba(0,0,0,0.75);
+}
+
+.details h3 {   
+    color: rgb(189, 189, 189);
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.details p{
+    font-size: 1.4rem;
+}
+
+.animation-area {
+    background-color: rgb(216, 216, 216);
+    height: 1289px;
+    width: 100%;
+}
+
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(29, 29, 29, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.box-area li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.5s;
+}
+
+.box-area li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.2s;
+    animation-duration: 12s;
+}
+
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.4s;
+}
+
+.box-area li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.5s;
+    animation-duration: 18s;
+}
+
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0.5s;
+}
+
+.box-area li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0.2s;
+    animation-duration: 12s;
+}
+
+.box-area li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0.7s;
+}
+
+.box-area li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0.15s;
+    animation-duration: 45s;
+}
+
+.box-area li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0.2s;
+    animation-duration: 35s;
+}
+
+.box-area li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0.5s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-1300px) rotate(720deg);
+        opacity: 1;
+    }
+}
+
+/* Section Five */
 .sec-five {
     grid-row: 5 / 6;
     grid-column: 1 / 3;
-    background-color: tan;
 }
 
 .footer {
     grid-row: 6 / 7;
     grid-column: 1 / 3;
     background-color: whitesmoke;
+    border-top: 2px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .foot {
@@ -402,4 +613,93 @@ nav a:hover {
     transition: color 750ms ease-in-out;
 }
 
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style-type: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
+@keyframes animate{
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1200px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+*/
+
+/*
+@keyframes alter {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
 */
