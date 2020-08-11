@@ -16,7 +16,7 @@
 
 .container {
     display: grid;
-    grid: 64px 650px 820px 1289px 954px 80px / 60% 40%;
+    grid: 64px 650px 820px 1289px 954px 55px / 60% 40%;
     grid-gap: 1px;
     overflow: hidden;
 }
@@ -508,7 +508,7 @@ nav a:hover {
 }
 
 .lefty {
-    width: 62%;
+    width: 60%;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -516,21 +516,20 @@ nav a:hover {
 
 .video {
     width: 100%;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
 .video video{
-    min-width: 100%; 
-    min-height: 100%;
     width: auto; 
     height: auto; 
-    box-shadow: 13px 18px 48px -11px rgba(0,0,0,0.75);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .video-text {
     width: 100%;
-    height: 168px;
+    height: 268px;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -543,6 +542,7 @@ nav a:hover {
 
 .sub-title {
     font-size: 2rem;
+    margin-top: 35px;
 }
 
 .latin-text {
@@ -551,18 +551,17 @@ nav a:hover {
     line-height: 30px;
 }
 .righty {
-    border: 2px solid yellow;
-    width: 37%;
+    width: 39%;
     height: 60%;
     display: inline-flex;
     flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .fisma, .now-then {
     width: 100%;
-    border: 2px solid black;
     height: 50%;
-    box-shadow: 13px 18px 48px -11px rgba(0,0,0,0.75);
 }
 
 .prototype {
@@ -570,7 +569,6 @@ nav a:hover {
 }
 
 .inner-box {
-    border: 2px solid blue;
     margin: 12px;
     height: 87%;
     display: flex;
@@ -579,15 +577,43 @@ nav a:hover {
 }
 
 .picture-box {
-    border: 2px solid red;
-    width: 35%;
+    width: 40%;
+}
+
+.picture-box img {
+    height: auto;
+    width: 80%;
 }
 
 .texting-box {
-    border: 2px solid red;
     width: 60%;
+    padding: 16px;
 }
 
+.texting-box h2{
+    font-size: 2rem;
+    color: rgb(59, 59, 59);
+    line-height: 30px;
+}
+
+.texting-box p {
+    font-size: 1.2rem;
+    color: rgb(100, 100, 100);
+}
+
+.alpha h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.alpha p {
+    margin-top: 10px;
+}
+
+.beta h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
 
 
 .footer {
